@@ -16,7 +16,7 @@ let win;
 //let welcome
 
 function setup() {
-  createCanvas(800, 600);
+  createCanvas(600, 600);
 
   gem =loadFont('assets/Gemstone.ttf');
 
