@@ -22,7 +22,7 @@ function setup() {
 
 function draw() {
 
-  background('#c6f5ff'); // light blue
+  background('#2FD806'); // light blue
 
   // the map command !!!!
   // takes your variable and maps it from range 1 to range 2
@@ -62,7 +62,7 @@ function draw() {
   noStroke();
   textSize(300);
   textAlign(CENTER);
-  text("ctk", width / 2, height / 2);
+  text("Aw Man", width / 2, height / 2);
 
 }
 
