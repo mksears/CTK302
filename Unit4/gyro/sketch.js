@@ -62,7 +62,7 @@ function draw() {
   noStroke();
   textSize(300);
   textAlign(CENTER);
-  text("Aw Man", width / 2, height / 2);
+  text("Boom", width / 2, height / 2);
 
 }
 
