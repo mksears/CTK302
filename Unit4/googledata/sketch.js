@@ -1,5 +1,6 @@
 var bubbles = [];
 let url = "";
+let birch;
 
 function setup() {
 //  let key = "1xG5lzBtJV3gK61ZE_qdku3ms9-pCJqwl0T8RVHI11m0"; // this is KEY of the URL from the sheet
@@ -9,6 +10,8 @@ function setup() {
   url = "https://opensheet.vercel.app/" + key + "/Form+Responses+1"; // here I'm making the string for loadJSON.
 
   loadJSON(url, gotData);
+
+  birch =loadImage('assets/forest.jpg');
 
   // Regular setup code we usually have
   createCanvas(900, 900);
@@ -35,8 +38,8 @@ function gotData(data) {
 }
 
 function draw() {
-  background("#fcba03");
-
+//  background("#fcba03");
+  image(birch, 0,0);
   // // iterate through the bubbles and display the objects!
   for (let i = 0; i < bubbles.length; i++) {
     bubbles[i].display();
@@ -58,10 +61,10 @@ class Bubble {
   }
 
   display() {
-    stroke("blue");
+    stroke("red");
     noFill();
     rect(this.pos.x, this.pos.y+10, 120, 120);
-    fill("black");
+    fill("yellow");
     text(
       this.name + "\n" + this.animal + "\n" + this.minecraft + "\n" + this.hero,
       this.pos.x,
